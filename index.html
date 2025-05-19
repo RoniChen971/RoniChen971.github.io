@@ -22,8 +22,9 @@
     #hero {
       position: relative;
       width: 100vw;
-      height: 66.66vh; /* 2/3 מהמסך */
+      height: 50vh;
       overflow: hidden;
+      background-color: black;
     }
 
     #hero video {
@@ -31,15 +32,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
       object-position: center;
-      z-index: 0;
       opacity: 0.9;
       pointer-events: none;
+      background-color: black;
     }
 
     .hero-content {
@@ -75,16 +74,18 @@
     #hero:-webkit-full-screen,
     #hero:-moz-full-screen,
     #hero:-ms-fullscreen {
-      height: 100vh;
+      width: 100vw;
+      height: 50vh; /* נשמר חצי מסך גם במסך מלא */
     }
 
     #hero:fullscreen video,
     #hero:-webkit-full-screen video,
     #hero:-moz-full-screen video,
     #hero:-ms-fullscreen video {
-      min-width: 100%;
-      min-height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
+      object-position: center;
     }
 
     /* Responsive Design */
@@ -98,7 +99,7 @@
       }
 
       #hero {
-        height: 66.66vh;
+        height: 50vh;
       }
     }
 
@@ -107,13 +108,13 @@
       max-width: 1000px;
       margin: auto;
       text-align: center;
-      color: #ffffff;
+      color: #333;
     }
 
     section h2 {
       font-size: 2em;
       margin-bottom: 1em;
-      color: #ffffff;
+      color: #007bff;
     }
 
     section p {
@@ -123,7 +124,7 @@
     }
 
     .cta {
-      background-color: #ffffff;
+      background-color: #007bff;
       color: white;
       padding: 0.8em 1.5em;
       text-decoration: none;
