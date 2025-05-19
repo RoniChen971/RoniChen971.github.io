@@ -5,66 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aye - Secure Digital Identity</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background-color: #1a1a2e;
+      color: #ffffff;
+    }
+    /* Hero Section with Video */
+    #hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      background-color: #f4f4f4;
+      overflow: hidden;
     }
-    header {
-      background-color: #2c3e50;
-      color: white;
+    #hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
       padding: 2em;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
+    .hero-content h1 {
+      font-size: 4.5em;
+      font-weight: bold;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+      margin-bottom: 0.3em;
     }
+    .hero-content p {
+      font-size: 1.5em;
+      font-weight: 300;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* Sections */
     section {
-      padding: 2em;
-      max-width: 800px;
+      padding: 4em 2em;
+      max-width: 1000px;
       margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #007bff;
+    }
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #e0e0e0;
     }
     .cta {
-      background-color: #3498db;
+      background-color: #007bff;
       color: white;
-      padding: 1em 2em;
+      padding: 0.8em 1.5em;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
       display: inline-block;
       margin-top: 1em;
     }
+    .cta:hover {
+      background-color: #0056b3;
+    }
+    /* Footer */
     footer {
-      background-color: #2c3e50;
-      color: white;
-      padding: 1em;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      background-color: #0f0f1a;
+      padding: 1.5em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #a0a0a0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Aye</h1>
-    <p>Secure Digital Identity Powered by AI</p>
-  </header>
-  <section>
-    <h2>Our Mission</h2>
-    <p>Aye is revolutionizing digital identity with AI, facial recognition, and dynamic questions, ensuring secure and seamless verification for businesses and users.</p>
+  <section id="hero">
+    <video autoplay muted loop>
+      <source src="aye-intro-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Aye</h1>
+      <p>Secure Digital Identity Powered by AI</p>
+    </div>
   </section>
-  <section>
-    <h2>About Us</h2>
-    <p>Founded by Rony Hananya, with 7 years of cybersecurity expertise, Aye is committed to building trust in the digital world.</p>
+  <section id="about">
+    <h2>Our Vision</h2>
+    <p>Aye delivers secure, seamless identity verification using AI, facial recognition, and real-time dynamic questions. Say goodbye to passwords and hello to trust.</p>
   </section>
-  <section>
-    <h2>Contact</h2>
-    <p>Interested in Aye? Reach out to us!</p>
-    <a href="mailto:ronic63@gmail.com" class="cta">Get in Touch</a>
+  <section id="team">
+    <h2>Who We Are</h2>
+    <p>Founded by [Your Full Name], a cybersecurity expert with 7 years of experience, Aye is building the future of digital trust for fintech, healthcare, and beyond.</p>
+  </section>
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Ready to redefine identity? Contact us to learn more.</p>
+    <a href="mailto:info@ayeid.com" class="cta">Reach Out</a>
   </section>
   <footer>
-    <p>&copy; 2025 Aye. All rights reserved.</p>
+    <p>© 2025 Aye. All rights reserved.</p>
   </footer>
 </body>
 </html>
