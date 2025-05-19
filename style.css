@@ -42,13 +42,15 @@ font-size: 20px;
   z-index: 1;
   padding: 2rem;
 }
-
+.front {
+    text-align: center;
+}
 
 .content-section {
   background-color: white;
   color: #333;
   padding: 4rem 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 footer {
@@ -99,13 +101,20 @@ body {
       opacity: 0;
       visibility: hidden;
     }
-
+   
     .content {
       height: 200vh; 
       padding: 2rem;
       background-color: #f9f9f9;
     }
-    
+
+.team {
+ text-align: left;     
+  vertical-align: top;  
+  position: absolute;
+  top: 0;
+  left: 0;
+   } 
     /* Mobile responsiveness */
         @media (max-width: 768px) {
             h1 {
