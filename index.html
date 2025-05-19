@@ -12,28 +12,30 @@
       font-family: 'Arial', sans-serif;
     }
     body {
-      background-color: #ffffff;
-      color: #ffffff;
+      background-color: #ffffff; /* White background as per your code */
+      color: #333; /* Dark text for readability on white */
     }
     /* Hero Section with Video */
     #hero {
       position: relative;
-      height: 50vh; /* Half of the viewport height */
-      width: 100vw; /* Full viewport width */
+      height: 50vh; /* Fixed to half screen height */
+      width: 100%; /* Full width of the viewport */
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       overflow: hidden;
+      margin: 0;
+      padding: 0;
     }
     #hero video {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height of the section */
-      object-fit: cover; /* Covers the area, may crop top/bottom */
-      object-position: center; /* Centers the video */
+      width: 100%; /* Always full width */
+      height: 100%; /* Matches 50vh */
+      object-fit: cover; /* Crops height to fit 50vh, maintains width */
+      object-position: center; /* Centers the video content */
       opacity: 0.8;
     }
     .hero-content {
@@ -42,13 +44,13 @@
       padding: 1em;
     }
     .hero-content h1 {
-      font-size: 4em; /* Adjusted for larger section */
+      font-size: 4em;
       font-weight: bold;
       text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
       margin-bottom: 0.2em;
     }
     .hero-content p {
-      font-size: 1.4em; /* Adjusted for larger section */
+      font-size: 1.4em;
       font-weight: 300;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
@@ -58,6 +60,7 @@
       max-width: 1000px;
       margin: auto;
       text-align: center;
+      color: #333;
     }
     section h2 {
       font-size: 2em;
@@ -67,7 +70,7 @@
     section p {
       font-size: 1.1em;
       line-height: 1.6;
-      color: #e0e0e0;
+      color: #666;
     }
     .cta {
       background-color: #007bff;
