@@ -18,12 +18,13 @@
       overflow-x: hidden;
     }
 
-    /* Hero Section */
+    /* Hero Section - Fullscreen */
     #hero {
       position: relative;
       width: 100vw;
-      height: 66.66vh; /* 2/3 מהמסך */
+      height: 100vh; /* מסך מלא */
       overflow: hidden;
+      background-color: black;
     }
 
     #hero video {
@@ -31,13 +32,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
       object-position: center;
-      z-index: 0;
       opacity: 0.9;
       pointer-events: none;
     }
@@ -60,123 +58,4 @@
     .hero-content h1 {
       font-size: 4em;
       font-weight: bold;
-      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-      margin-bottom: 0.2em;
-    }
-
-    .hero-content p {
-      font-size: 1.4em;
-      font-weight: 300;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Fullscreen support */
-    #hero:fullscreen,
-    #hero:-webkit-full-screen,
-    #hero:-moz-full-screen,
-    #hero:-ms-fullscreen {
-      height: 100vh;
-    }
-
-    #hero:fullscreen video,
-    #hero:-webkit-full-screen video,
-    #hero:-moz-full-screen video,
-    #hero:-ms-fullscreen video {
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: contain;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.5em;
-      }
-
-      .hero-content p {
-        font-size: 1em;
-      }
-
-      #hero {
-        height: 66.66vh;
-      }
-    }
-
-    section {
-      padding: 4em 2em;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-      color: #333;
-    }
-
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 1em;
-      color: #007bff;
-    }
-
-    section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #666;
-    }
-
-    .cta {
-      background-color: #007bff;
-      color: white;
-      padding: 0.8em 1.5em;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      transition: background-color 0.3s;
-      display: inline-block;
-      margin-top: 1em;
-    }
-
-    .cta:hover {
-      background-color: #0056b3;
-    }
-
-    footer {
-      background-color: #0f0f1a;
-      padding: 1.5em;
-      text-align: center;
-      font-size: 0.9em;
-      color: #a0a0a0;
-    }
-  </style>
-</head>
-<body>
-  <section id="hero">
-    <video autoplay muted loop playsinline>
-      <source src="aye-intro-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content">
-      <h1>Aye</h1>
-      <p>Secure Digital Identity Powered by AI</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>Our Vision</h2>
-    <p>Aye delivers secure, seamless identity verification using AI, facial recognition, and real-time dynamic questions. Say goodbye to passwords and hello to trust.</p>
-  </section>
-
-  <section id="team">
-    <h2>Who We Are</h2>
-    <p>Founded by [Your Full Name], a cybersecurity expert with 7 years of experience, Aye is building the future of digital trust for fintech, healthcare, and beyond.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Ready to redefine identity? Contact us to learn more.</p>
-    <a href="mailto:info@ayeid.com" class="cta">Reach Out</a>
-  </section>
-
-  <footer>
-    <p>© 2025 Aye. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      text-shadow: 3px 3px 6px rgba(0, 0, 0,
