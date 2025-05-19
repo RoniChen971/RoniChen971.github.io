@@ -18,8 +18,14 @@
       overflow-x: hidden;
     }
 
+    #hero {
+      position: relative;
+      width: 100vw;
+      height: 100vh; 
+      overflow: hidden;
     /* Hero Section - Fullscreen */
- 
+    }
+
     #hero video {
       position: absolute;
       width: 100%;
@@ -114,10 +120,9 @@
     }
   </style>
 </head>
-<video src="aye-intro-video.mp4" autoplay muted loop playsinline></video>
+<section id="hero">
+<video src="aye-intro-video.mp4" autoplay muted loop playsinline ty></video>
 <body>
-  <section id="hero">
-   
     <div class="hero-content">
       <h1>Aye</h1>
       <p>Secure Digital Identity Powered by AI</p>
