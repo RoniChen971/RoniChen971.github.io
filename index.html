@@ -15,7 +15,6 @@
     body {
       background-color: #ffffff;
       color: #ffffff;
-      width: 100%;
       overflow-x: hidden;
     }
 
@@ -23,7 +22,7 @@
     #hero {
       position: relative;
       width: 100vw;
-      height: 50vh;
+      height: 66.66vh; /* 2/3 מהמסך */
       overflow: hidden;
     }
 
@@ -34,8 +33,11 @@
       transform: translate(-50%, -50%);
       min-width: 100%;
       min-height: 100%;
+      width: auto;
+      height: auto;
       object-fit: contain;
       object-position: center;
+      z-index: 0;
       opacity: 0.9;
       pointer-events: none;
     }
@@ -68,7 +70,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    /* Fullscreen handling */
+    /* Fullscreen support */
     #hero:fullscreen,
     #hero:-webkit-full-screen,
     #hero:-moz-full-screen,
@@ -96,23 +98,22 @@
       }
 
       #hero {
-        height: 50vh;
+        height: 66.66vh;
       }
     }
 
-    /* Sections */
     section {
       padding: 4em 2em;
       max-width: 1000px;
       margin: auto;
       text-align: center;
-      color: #333;
+      color: #ffffff;
     }
 
     section h2 {
       font-size: 2em;
       margin-bottom: 1em;
-      color: #007bff;
+      color: #ffffff;
     }
 
     section p {
@@ -122,7 +123,7 @@
     }
 
     .cta {
-      background-color: #007bff;
+      background-color: #ffffff;
       color: white;
       padding: 0.8em 1.5em;
       text-decoration: none;
