@@ -12,18 +12,20 @@
       font-family: 'Arial', sans-serif;
     }
 
-    body, html {
+    html, body {
       height: 100%;
       width: 100%;
       overflow-x: hidden;
+      background: black;
     }
 
-    /* Hero Fullscreen */
+    /* Fullscreen Hero Section */
     #hero {
       position: relative;
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       overflow: hidden;
+      background-color: black;
     }
 
     #hero video {
@@ -31,8 +33,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100vw;
-      height: 100vh;
+      min-width: 120%;
+      min-height: 120%;
       object-fit: cover;
       object-position: center;
       z-index: 0;
@@ -51,9 +53,9 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 1em;
       color: white;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      padding: 1em;
     }
 
     .hero-content h1 {
@@ -73,6 +75,11 @@
 
       .hero-content p {
         font-size: 1.1em;
+      }
+
+      #hero video {
+        min-width: 150%;
+        min-height: 150%;
       }
     }
 
