@@ -10,14 +10,14 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      overflow: hidden;
       background: black;
+      scroll-behavior: smooth; /* Enables smooth scrolling */
     }
 
     #hero {
       position: relative;
       width: 100%;
-      height: 100vh;
+      height: 100vh; /* Full screen height for the first section */
       overflow: hidden;
     }
 
@@ -27,7 +27,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; /* Ensures no lines on sides, may crop top/bottom */
       object-position: center;
       z-index: 0;
     }
@@ -55,13 +55,66 @@
       font-size: 1.4em;
     }
 
+    /* Additional Sections */
+    section {
+      padding: 4em 2em;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      color: #333;
+      background-color: #fff;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #007bff;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .cta {
+      background-color: #007bff;
+      color: white;
+      padding: 0.8em 1.5em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+      display: inline-block;
+      margin-top: 1em;
+    }
+
+    .cta:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0f0f1a;
+      padding: 1.5em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #a0a0a0;
+    }
+
+    /* Responsive Design */
     @media (max-width: 768px) {
       .hero-content h1 {
         font-size: 2.5em;
       }
-
       .hero-content p {
         font-size: 1em;
+      }
+      #hero {
+        height: 70vh; /* Adjust for mobile screens */
+      }
+      section {
+        padding: 2em 1em;
       }
     }
   </style>
@@ -77,18 +130,26 @@
     </div>
   </section>
 
+  <section id="about">
+    <h2>Our Vision</h2>
+    <p>Aye delivers secure, seamless identity verification using AI, facial recognition, and real-time dynamic questions. Say goodbye to passwords and hello to trust.</p>
+  </section>
+  <section id="team">
+    <h2>Who We Are</h2>
+    <p>Founded by [Your Full Name], a cybersecurity expert with 7 years of experience, Aye is building the future of digital trust for fintech, healthcare, and beyond.</p>
+  </section>
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Ready to redefine identity? Contact us to learn more.</p>
+    <a href="mailto:info@ayeid.com" class="cta">Reach Out</a>
+  </section>
+  <footer>
+    <p>© 2025 Aye. All rights reserved.</p>
+  </footer>
+
   <script>
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-}
-</script>
-
+    // Remove the unused navbar scroll function since there's no navbar
+    // Optionally, you can add navigation links with smooth scrolling
+  </script>
 </body>
 </html>
