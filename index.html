@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,8 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      font-family: 'Arial', sans-serif;
+      overflow: hidden;
       background: black;
-      overflow-x: hidden;
     }
 
     #hero {
@@ -31,18 +30,16 @@
       object-fit: cover;
       object-position: center;
       z-index: 0;
-      pointer-events: none;
     }
 
     .hero-content {
       position: relative;
       z-index: 1;
-      width: 100%;
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100%;
       color: white;
       text-align: center;
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
@@ -67,83 +64,18 @@
         font-size: 1em;
       }
     }
-
-    section {
-      padding: 4em 2em;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-      background-color: white;
-      color: #333;
-    }
-
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 1em;
-      color: #007bff;
-    }
-
-    section p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #666;
-    }
-
-    .cta {
-      background-color: #007bff;
-      color: white;
-      padding: 0.8em 1.5em;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      transition: background-color 0.3s;
-      display: inline-block;
-      margin-top: 1em;
-    }
-
-    .cta:hover {
-      background-color: #0056b3;
-    }
-
-    footer {
-      background-color: #0f0f1a;
-      padding: 1.5em;
-      text-align: center;
-      font-size: 0.9em;
-      color: #a0a0a0;
-    }
   </style>
 </head>
 <body>
   <section id="hero">
     <video autoplay muted loop playsinline>
       <source src="aye-intro-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+      הדפדפן שלך אינו תומך בתגית הווידאו.
     </video>
     <div class="hero-content">
       <h1>Aye</h1>
       <p>Secure Digital Identity Powered by AI</p>
     </div>
   </section>
-
-  <section id="about">
-    <h2>Our Vision</h2>
-    <p>Aye delivers secure, seamless identity verification using AI, facial recognition, and real-time dynamic questions. Say goodbye to passwords and hello to trust.</p>
-  </section>
-
-  <section id="team">
-    <h2>Who We Are</h2>
-    <p>Founded by [Your Full Name], a cybersecurity expert with 7 years of experience, Aye is building the future of digital trust for fintech, healthcare, and beyond.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Ready to redefine identity? Contact us to learn more.</p>
-    <a href="mailto:info@ayeid.com" class="cta">Reach Out</a>
-  </section>
-
-  <footer>
-    <p>© 2025 Aye. All rights reserved.</p>
-  </footer>
 </body>
 </html>
