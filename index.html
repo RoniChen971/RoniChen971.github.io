@@ -70,12 +70,25 @@
   <section id="hero">
     <video autoplay muted loop playsinline>
       <source src="aye-intro-video.mp4" type="video/mp4" />
-      הדפדפן שלך אינו תומך בתגית הווידאו.
     </video>
     <div class="hero-content">
       <h1>Aye</h1>
       <p>Secure Digital Identity Powered by AI</p>
     </div>
   </section>
+
+  <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
 </body>
 </html>
