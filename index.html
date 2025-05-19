@@ -22,9 +22,8 @@
     #hero {
       position: relative;
       width: 100vw;
-      height: 50vh;
+      height: 66.66vh; /* 2/3 מהמסך */
       overflow: hidden;
-      background-color: black;
     }
 
     #hero video {
@@ -32,13 +31,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
       object-fit: contain;
       object-position: center;
+      z-index: 0;
       opacity: 0.9;
       pointer-events: none;
-      background-color: black;
     }
 
     .hero-content {
@@ -74,18 +75,16 @@
     #hero:-webkit-full-screen,
     #hero:-moz-full-screen,
     #hero:-ms-fullscreen {
-      width: 100vw;
-      height: 50vh; /* נשמר חצי מסך גם במסך מלא */
+      height: 100vh;
     }
 
     #hero:fullscreen video,
     #hero:-webkit-full-screen video,
     #hero:-moz-full-screen video,
     #hero:-ms-fullscreen video {
-      width: 100%;
-      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
       object-fit: contain;
-      object-position: center;
     }
 
     /* Responsive Design */
@@ -99,7 +98,7 @@
       }
 
       #hero {
-        height: 50vh;
+        height: 66.66vh;
       }
     }
 
