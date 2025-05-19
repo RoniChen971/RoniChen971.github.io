@@ -4,10 +4,26 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
-  text-align: center;
+    
+}
+   .floating-text {
+position: absolute;
+  bottom: 20px;
+  left: 50px;
+  font-size: 40px;
+  color: whitesmoke;
+  direction: rtl;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.second-title {
+font-size: 20px;
+  left: 90px;
+
+
 }
 
 .background-video {
@@ -18,6 +34,8 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+ opacity: 0.8;
+
 }
 
 .hero-content {
@@ -39,3 +57,68 @@ footer {
   text-align: center;
   padding: 2rem;
 }
+body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    
+    nav {
+            position: fixed;
+            top: 0;
+            left: 0; /* Top-left corner */
+            width: 100%; /* Full width like MaRS IAF */
+            background-color: #000000; /* Black bar */
+            z-index: 2;
+            padding: 10px 0;
+              opacity: 1;
+
+        }
+ nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: #FFFFFF; /* White text */
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFFFFF; /* Pink on hover for cute effect */
+        }
+
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .content {
+      height: 200vh; 
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    
+    /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            nav {
+                left: 10px;
+                top: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
