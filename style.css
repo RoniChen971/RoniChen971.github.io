@@ -252,18 +252,7 @@ nav ul li a:hover {
   height: 28px;
 }
 
-@media (max-width: 768px) {
-  .content-section-one {
-    flex-direction: column;
-    align-items: stretch;
-  }
 
-  .front,
-  .contact-section {
-    width: 100%;
-    padding: 1rem 0;
-  }
-}
 
 
 .whatsapp-link img {
@@ -271,16 +260,6 @@ nav ul li a:hover {
   height: 28px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 
 
@@ -315,21 +294,6 @@ footer {
   text-align: center;
   padding: 2rem;
 }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            nav {
-                left: 10px;
-                top: 10px;
-            }
-            nav ul {
-                flex-direction: column;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
 
 .content-section-img {
   display: flex;
@@ -347,3 +311,120 @@ footer {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
+
+
+/* === RESPONSIVE STYLES === */
+
+@media (max-width: 1024px) {
+  .floating-text {
+    font-size: 40px;
+    left: 20px;
+  }
+  .second-title {
+    font-size: 20px;
+    left: 30px;
+  }
+  .content-section-three,
+  .content-section-img {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+    gap: 2rem;
+  }
+  .text,
+  .text_two {
+    padding-left: 0;
+    text-align: center;
+  }
+  .video-container {
+    padding-right: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .floating-text {
+    font-size: 28px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .second-title {
+    font-size: 16px;
+    left: 10px;
+  }
+  .front h2 {
+    font-size: 1.6rem;
+  }
+  .front p {
+    font-size: 1rem;
+  }
+  .text,
+  .text_two {
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .video {
+    max-width: 100%;
+  }
+  .content-section-lest,
+  .content-section-three,
+  .content-section-img {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    height: auto;
+  }
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+  .floating-text {
+    font-size: 32px;
+    bottom: 15px;
+    left: 20px;
+  }
+  .second-title {
+    font-size: 18px;
+    left: 20px;
+  }
+  .text,
+  .text_two {
+    padding-left: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+  .video-container {
+    padding-right: 0;
+    justify-content: center;
+  }
+  .video {
+    max-width: 100%;
+  }
+  .front h2 {
+    font-size: 1.8rem;
+  }
+  .front p {
+    font-size: 1.05rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+  .contact-form h2 {
+    font-size: 1.6rem;
+  }
+}
