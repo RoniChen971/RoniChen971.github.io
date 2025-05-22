@@ -103,6 +103,59 @@ nav ul li a:hover {
   top: 0;
   left: 0;
    } 
+@media (min-width: 430px) and (max-width: 768px) {
+  .floating-text {
+    font-size: 32px;
+    bottom: 15px;
+    left: 20px;
+  }
+
+  .second-title {
+    font-size: 18px;
+    left: 20px;
+  }
+
+  .text,
+  .text_two {
+    padding-left: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .video-container {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  .content-section-three,
+  .content-section-img {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .front h2 {
+    font-size: 1.8rem;
+  }
+
+  .front p {
+    font-size: 1.05rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+
+  .contact-form h2 {
+    font-size: 1.6rem;
+  }
+}
 
   .content-section-three  {
     display: flex;
