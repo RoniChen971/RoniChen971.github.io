@@ -316,14 +316,6 @@ footer {
 /* === RESPONSIVE STYLES === */
 
 @media (max-width: 1024px) {
-  .floating-text {
-    font-size: 40px;
-    left: 20px;
-  }
-  .second-title {
-    font-size: 20px;
-    left: 30px;
-  }
   .content-section-three,
   .content-section-img {
     flex-direction: column;
@@ -390,17 +382,65 @@ footer {
     font-size: 0.95rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  .floating-text h1 {
+    font-size: 70px;
+  }
 
-@media (min-width: 430px) and (max-width: 768px) {
-  .floating-text {
-    font-size: 32px;
-    bottom: 15px;
-    left: 20px;
-  }
   .second-title {
-    font-size: 18px;
-    left: 20px;
+    font-size: 35px;
   }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .floating-text {
+    bottom: 40px;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .floating-text h1 {
+    font-size: 50px;
+  }
+
+  .second-title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .floating-text {
+    bottom: 30px;
+    left: 20px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .floating-text h1 {
+    font-size: 36px;
+  }
+
+  .second-title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .floating-text {
+    bottom: 20px;
+    left: 15px;
+  }
+}
+@media (min-width: 430px) and (max-width: 768px) {
+  
   .text,
   .text_two {
     padding-left: 0;
