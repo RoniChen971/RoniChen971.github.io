@@ -125,12 +125,6 @@ nav ul li a:hover {
     text-align: left;
 }
 
-.video-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
-}
-
 .video {
     width: 100%;
     max-width: 470px;
@@ -327,8 +321,9 @@ footer {
         padding: 2rem 1rem;
     }
     .video-container {
-        justify-content: center;
-        padding-right: 0;
+       justify-content: center !important; 
+        padding-right: 0 !important;
+
     }
     .text {
         padding-left: 0;
@@ -340,6 +335,21 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+     .video-container {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .video {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -381,6 +391,15 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .video-container {
+        padding: 0 !important;
+        margin: 0 auto;
+    }
+
+    .video {
+        max-width: 95% !important; /* טיפה שוליים יפים */
+        border-radius: 8px;
+    }
     .floating-text h1 {
         font-size: 38px;
     }
