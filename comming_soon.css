@@ -1,0 +1,116 @@
+
+    body {
+background: conic-gradient(
+  from 0deg, #fff6d4 0%, #f5e29e 25%,#e6c87a 50%, #f5e29e 75%,  #fff6d4 100%);
+            display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 64px;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .button {
+    background: #000; 
+      color: #f4e1d2;         /* Black text */
+      border: none;
+      padding: 15px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #d38b43; /* Slightly lighter copper on hover */
+      transform: scale(1.05);
+    }
+body {
+    background: conic-gradient(
+        from 0deg, #fff6d4 0%, #f5e29e 25%, #e6c87a 50%, #f5e29e 75%, #fff6d4 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.button {
+    background: #000;
+    color: #f4e1d2;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #d38b43;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 10px 25px;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        letter-spacing: 1.5px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 5px;
+    }
+}
