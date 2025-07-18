@@ -303,21 +303,23 @@ footer {
 
 
 @media screen and (max-width: 1024px) {
-      .content-section-img {
+    .content-section-img {
         flex-direction: column;
-        height: auto;            
+        height: auto !important;  /* ✅ גובה אוטומטי, לא נחתך */
         gap: 40px;
         padding: 20px;
         text-align: center;
     }
 
     .image {
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .front {
         max-width: 90%;
-    }
+    }     
+
+
     .floating-text h1 {
         font-size: 70px;
     }
@@ -350,16 +352,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    
     .content-section-img {
         flex-direction: column;
-        height: auto;
+        height: auto !important;
         gap: 30px;
         padding: 15px;
     }
 
     .image {
-        max-width: 250px;
+        max-width: 260px;
     }
 
     .front {
@@ -438,10 +439,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-
-    .content-section-img {
+.content-section-img {
         flex-direction: column;
-        height: auto;
+        height: auto !important;
         gap: 20px;
         padding: 10px;
     }
@@ -454,13 +454,14 @@ footer {
         max-width: 100%;
         font-size: 13px;
     }
+
     .video-container {
         padding: 0 !important;
         margin: 0 auto;
     }
 
     .video {
-        max-width: 95% !important; /* טיפה שוליים יפים */
+        max-width: 95% !important; 
         border-radius: 8px;
     }
     .floating-text h1 {
