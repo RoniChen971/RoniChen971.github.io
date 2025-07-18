@@ -301,7 +301,6 @@ footer {
 }
 
 
-
 @media screen and (max-width: 1024px) {
     .floating-text h1 {
         font-size: 70px;
@@ -386,7 +385,7 @@ footer {
         max-width: 100%;
     }
     .image {
-        max-width: 90%;
+        max-width: 70%;
     }
 }
 
@@ -397,7 +396,7 @@ footer {
     }
 
     .video {
-        max-width: 95% !important; 
+        max-width: 95% !important; /* טיפה שוליים יפים */
         border-radius: 8px;
     }
     .floating-text h1 {
@@ -416,7 +415,7 @@ footer {
     }
     .video,
     .image {
-        max-width: 100%;
+        max-width: 50%;
     }
     .contact-form input,
     .contact-form textarea {
