@@ -301,7 +301,23 @@ footer {
 }
 
 
+
 @media screen and (max-width: 1024px) {
+      .content-section-img {
+        flex-direction: column;
+        height: auto;            
+        gap: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image {
+        max-width: 300px;
+    }
+
+    .front {
+        max-width: 90%;
+    }
     .floating-text h1 {
         font-size: 70px;
     }
@@ -334,7 +350,38 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-     .video-container {
+    
+    .content-section-img {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .image {
+        max-width: 250px;
+    }
+
+    .front {
+        max-width: 95%;
+        font-size: 14px;
+    }
+      .content-section-img {
+        flex-direction: column;
+        height: auto;            /* ✅ מאפשר לתוכן להתרחב */
+        gap: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image {
+        max-width: 300px;
+    }
+
+    .front {
+        max-width: 90%;
+    }
+    .video-container {
         flex-direction: column;
         justify-content: center !important;
         align-items: center !important;
@@ -387,9 +434,26 @@ footer {
     .image {
         max-width: 70%;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
+
+    .content-section-img {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .image {
+        max-width: 200px;
+    }
+
+    .front {
+        max-width: 100%;
+        font-size: 13px;
+    }
     .video-container {
         padding: 0 !important;
         margin: 0 auto;
