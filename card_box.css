@@ -162,10 +162,16 @@
     .cards-container {
         gap: 25px;
         max-width: 95%;
-    }
+    }  
     .flip-card {
         max-width: 180px;
         height: 260px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        font-size: 16px;
+        padding: 10px;
     }
 }
 
@@ -185,9 +191,15 @@
         justify-content: center;
         gap: 20px;
     }
-    .flip-card {
+   .flip-card {
         max-width: 160px;
         height: 230px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        font-size: 14px;
+        padding: 8px;
     }
 }
 
@@ -207,8 +219,16 @@
         justify-content: center;
         gap: 15px;
     }
-    .flip-card {
+        .flip-card {
         max-width: 140px;
         height: 200px;
     }
+
+    .flip-card-front,
+    .flip-card-back {
+        font-size: 12px;
+        padding: 6px;
+        line-height: 1.3; 
+    }
+
 }
