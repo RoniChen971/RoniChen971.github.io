@@ -299,13 +299,27 @@ footer {
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
+footer {
+    background-color: #f0f0f0;
+    color: #555;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    position: relative; 
+    clear: both;
+    z-index: 1;
+}
 
-
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 30px; 
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .content-section-img {
         flex-direction: column;
-        height: auto !important;  /* ✅ גובה אוטומטי, לא נחתך */
+        height: auto !important;  
         gap: 40px;
         padding: 20px;
         text-align: center;
