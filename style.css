@@ -369,7 +369,7 @@ footer {
     }
       .content-section-img {
         flex-direction: column;
-        height: auto;            /* ✅ מאפשר לתוכן להתרחב */
+        height: auto;          
         gap: 40px;
         padding: 20px;
         text-align: center;
@@ -486,4 +486,11 @@ footer {
     .contact-form textarea {
         font-size: 0.9rem;
     }
+
+@media screen and (max-width: 768px) {
+    .content-section-img, .content-section-three, .content-section-one {
+        height: auto !important;
+    }
+}
+
 }
