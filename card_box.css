@@ -6,6 +6,12 @@
     margin: 0;
 }
 
+.box.active p {
+    max-height: 200px;
+    opacity: 1;
+}
+
+
 .content-section-box {
     display: flex;
     flex-direction: column;
