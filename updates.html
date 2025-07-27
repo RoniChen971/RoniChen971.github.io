@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Updates</title>
+  <link rel="stylesheet" href="updates.css">
+</head>
+<body>
+  <div class="updates-container">
+    <h2>Post a Team Update</h2>
+    
+    <textarea id="message" placeholder="Write your update here..."></textarea>
+<input type="file" id="fileInput" accept="image/*,video/*">
+<button id="send-btn">Send Update</button>
+<button id="logout-btn">Logout</button>
+
+<div id="status-message" style="
+  display: none;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: green;
+"></div>
+
+
+  <script type="module" src="updates.js"></script>
+</body>
+</html>
