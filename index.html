@@ -6,26 +6,51 @@
     <title>Aye</title>
 <meta name="application-name" content="Aye">
 <meta name="apple-mobile-web-app-title" content="Aye">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet", href="card_box.css">
 <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chet.css">
+
 </head>
-
 <body>
+<section id="navbar">
 
-  <section id= "home" class="hero">
+  <div id="chatWidget">
+    <div id="chatHeader">
+      Aye News 
+      <span id="closeButton">×</span>
+    </div>
+    <div id="chatMessages"></div>
+  </div>
+
+
+  <div id="chatToggle">
+    <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+    </svg>
+  </div>
+
+</section>
+
+
+
+<section id= "home" class="hero">
     <video autoplay muted loop playsinline class="background-video">
       <source src="passwords.mp4" type="video/mp4" />
     </video>
     <nav>
         <ul>
+        
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="blog.html" >Explore Our Insights</a></li>
             <li><a href="team.html" class="cta">Meet Our Team</a></li>
+            <button id="login-btn" style="margin-left: auto; margin-right: 35px; color:black; background: linear-gradient(135deg, #fff6d4, #f5e29e); font-size: 16px;    font-weight: bold;">Login</button>
         </ul>
    
     </nav>
@@ -59,6 +84,7 @@ That’s why we’ve built a new kind of Digital ID - a living identity that con
   That’s the new standard of trust.</h1>
  </p>
     <br>
+
 </div>    
  <div class="video-container">
   <video autoplay muted loop playsinline class="video">
@@ -238,7 +264,6 @@ Join us early and help shape the future of digital identity.<br><br>
 </section>
 
 
-
   <footer>
     <p>© 2025 Aye. All rights reserved.</p>
   </footer>
@@ -250,6 +275,7 @@ document.querySelectorAll('.box').forEach(function(box) {
     });
 });
 </script>
+  <script type="module" src="script.js"></script>
 
 </body>
 </html>
