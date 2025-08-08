@@ -137,6 +137,7 @@
     display: flex;
     margin-top: 20px;
     justify-content: center;
+        color: #e0bfa3;
     align-items: center;
     margin-right: auto;
     gap: 25px;
@@ -249,3 +250,4 @@
     }
 
 }
+
