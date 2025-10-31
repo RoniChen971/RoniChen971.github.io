@@ -1,0 +1,61 @@
+/* --- 1. חובה ב-HTML לכל אתר רספונסיבי --- */
+/* וודא שהשורה הזו קיימת בתוך תגית <head> בקובץ ה-HTML שלך: */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* --- 2. CSS בסיסי לקלאס .box-alt --- */
+.box-alt {
+    background-color: #ffffff;
+    /* ריפוד נוח למחשב שולחני */
+    padding: 30px; 
+    border-radius: 12px;
+    
+    /* הצל נשאר נקי */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); 
+    
+    /* קלילות: מעבר חלק לכל השינויים */
+    transition: all 0.3s ease-in-out; 
+    
+    /* קו שקוף בצד שמאל (5px) */
+    border-left: 5px solid transparent; 
+    
+    display: block; 
+}
+
+/* אפקט ה-Hover: הקופסא מגיבה בריחוף */
+.box-alt:hover {
+    /* צל מודגש קלות */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    
+    /* מעלה את הקופסא מעט (אפקט ריחוף) */
+    transform: translateY(-5px); 
+    
+    /* *הקו האנכי מופיע בצבע זהב קליל* (7px) */
+    border-left: 7px solid #f5e29e; 
+    
+    /* מוודא שאין קו תחתון, אם הוא היה מוגדר במקום אחר */
+    border-bottom: 5px solid transparent;
+    
+    cursor: pointer;
+}
+
+
+/* --- 3. MEDIA QUERIES: התאמה למסכים קטנים יותר (טלפונים וטאבלטים) --- */
+
+/* כאשר רוחב המסך קטן מ-768px (טאבלטים אנכיים וטלפונים) */
+@media (max-width: 768px) {
+    .box-alt {
+        /* *הקטנת הריפוד הפנימי לטלפון* - נותן יותר מקום לתוכן */
+        padding: 20px 15px; 
+        
+        /* הורדת הצל בטלפון - עוזר לביצועים */
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); 
+    }
+
+    .box-alt:hover {
+        /* ביטול אפקט הריחוף בטלפון - פחות רלוונטי לטאץ' */
+        transform: none; 
+        
+        /* הקו האנכי נשאר רחב יותר כדי להיות גלוי יותר לטאץ' */
+        border-left: 6px solid #f5e29e; 
+    }
+}
